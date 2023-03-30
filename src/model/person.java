@@ -11,6 +11,15 @@ package model;
 public class person {
     public int id;
     public String name;
+    public String lastName;
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
     public int getId() {
         return id;
@@ -23,15 +32,22 @@ public class person {
     public String getName() {
         return name;
     }
-
+    
     public void setName(String name) {
         this.name = name;
     }
 
-    public person(int id, String name) {
-        this.id = id;
-        this.name = name;
+
+    @Override
+    public String toString() {
+        return "person{" + "id=" + id + ", name=" + name + '}';
+    }
+
+  
+
+
+
     }
     
     
-}
+

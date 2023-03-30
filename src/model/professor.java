@@ -11,5 +11,6 @@ package model;
 public class professor {
     public int id;
     public String name;
+
            
 }
