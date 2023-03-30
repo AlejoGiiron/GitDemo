@@ -11,6 +11,7 @@ package model;
 public class person {
     public int id;
     public String name;
+    public String address;
     public String lastName;
 
     public String getLastName() {
@@ -19,6 +20,11 @@ public class person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+        
+    }
+    
+    public person(String address) {
+        this.address = address;
     }
 
     public int getId() {
